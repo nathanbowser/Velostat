@@ -6,7 +6,7 @@
 	(reduce + (map :distance (vals d))))
 
 (defn average-speed [d]
-	(let [[t c] (a (map :distance (vals d)))] (/ t c)))
+	(let [[t c] (a (map :average (vals d)))] (/ t c)))
 
 (defn -main [& args]
 	(println (total-mileage (read-string (slurp (first args)))))
